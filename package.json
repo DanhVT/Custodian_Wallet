@@ -1,0 +1,79 @@
+{
+    "name": "quanta-admin-wallet",
+    "version": "0.0.1",
+    "buildNumber": 1,
+    "description": "Multiple digital assets wallet",
+    "main": "main.js",
+    "author": "Quanta Technology Limited <info@quanta.im>",
+    "homepage": "https://altaapps.io/wallet",
+    "license": "MIT",
+    "contributors": [{
+        "name": "Quanta Technology Limited",
+        "email": "info@quanta.im"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/enomind/AltaWallet-desktop.git"
+    },
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "install": "bower install",
+        "start": "electron ./app --enable-logging",
+        "dev": "NODE_ENV='development' npm run start",
+        "dist": "npm run dist:linux64",
+        "dist:osx": "build --platform darwin",
+        "dist:win32": "build --platform win32 --arch ia32",
+        "dist:win64": "build --platform win32 --arch x64",
+        "dist:linux64": "build --platform linux --arch x64"
+    },
+    "devDependencies": {
+        "electron-builder": "^5.22.2",
+        "electron-prebuilt": "^1.2.7",
+        "electron-squirrel-startup": "^1.0.0"
+    },
+    "build": {
+        "app-bundle-id": "altawallet",
+        "app-category-type": "Unity",
+        "download": "cache",
+        "iconUrl": "https://altaapps.io/img/favicon-01.png",
+        "files": [
+            "assets/css/*.css",
+            "assets/fonts${/*}",
+            "assets/img/*",
+            "assets/loading/*",
+            "assets/sound/*",
+            "assets/js/*.js",
+            "libs/*.js",
+            "components/Font-Awesome/css/font-awesome.css",
+            "components/Font-Awesome/fonts/*",
+            "components/nedb/browser-version/out/nedb.js",
+            "components/web3/dist/web3.js",
+            "components/jsSHA/src/sha.js",
+            "components/wallet-address-validator/dist/wallet-address-validator.min.js",
+            "components/zxcvbn/dist/zxcvbn.js",
+            "components/async/dist/async.min.js",
+            "components/angular-material/angular-material.css",
+            "components/jquery/dist/jquery.min.js",
+            "components/angular/angular.js",
+            "components/angular-ui-router/release/angular-ui-router.js",
+            "components/oclazyload/dist/ocLazyLoad.js",
+            "components/angular-translate/angular-translate.js",
+            "components/angular-animate/angular-animate.js",
+            "components/angular-aria/angular-aria.js",
+            "components/angular-bootstrap/ui-bootstrap.js",
+            "components/angular-messages/angular-messages.js",
+            "components/angular-sanitize/angular-sanitize.js",
+            "components/angular-material/angular-material.js",
+            "components/angular-clipboard/angular-clipboard.js",
+            "components/moment/locale/vi.js",
+            "components/angular-qr-scanner/src/jsqrcode-combined.min.js",
+            "modules${/*}",
+            "core/*",
+            "config/*.json",
+            "config/*.js",
+            "main.js",
+            "index.html",
+            "package.json"
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quanta Wallet</title>
+    <link rel="stylesheet" href="assets/loading/loading.css">
+    <script src="assets/js/autoload.js"></script>
+    <script src="assets/js/GALocalStorage.js"></script>
+    <!--
+    <script type="text/javascript">
+    // ga_storage._setAccount('UA-91740920-2'); //Replace with your own Tracking Id
+    // ga_storage._trackPageview('/index.html');
+    </script>-->
+</head>
+
+<body class="{{lang.code}} LPC" ng-controller="appController">
+    <div class="loading-animation">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <div class="default-view LPC" ui-view="defaultView"></div>
+</body>
+
+</html>

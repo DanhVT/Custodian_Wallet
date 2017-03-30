@@ -1,0 +1,23 @@
+<div ng-controller="settingController" ng-init="onInit()">
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option" ng-if="isBackup" ng-click="onChangePassword($event);"><span>&#9655;</span>{{$root.lang.mainMenu.optionsChangePassword}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option onShowPassPhrase hide" ng-click="onShowPassPhrase($event);"><span>&#9655;</span>{{$root.lang.mainMenu.optionsDisplayPhrase}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option" ng-click="onCreateWallet($event);"><span>&#9655;</span>{{$root.lang.mainMenu.optionsNewWallet}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option" ng-click="onChangeWalletName($event);"><span>&#9655;</span>{{$root.lang.mainMenu.optionsChangeWalletName}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option" ng-click="onChangeLanguage($event);"><span>&#9655;</span>{{$root.lang.mainMenu.optionsChangeLanguage}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController" class="hide">
+        <li class="menu-item option" ng-click="onChangeFiat();"><span>&#9655;</span>{{$root.lang.setting.dialog.activeFiat.header}}</li>
+    </a>
+    <a href="javascript: void(0);" ng-controller="settingController">
+        <li class="menu-item option" ng-click="onChangeFeeSend();"><span>&#9655;</span>{{$root.lang.setting.dialog.feeSend.header}}</li>
+    </a>
+</div>

@@ -1,0 +1,23 @@
+<md-dialog aria-label="change-language-dialog" class="block-page-wrap">
+    <md-input-container class="change-language-dialog">
+        <h2 class="block-page-wrap-head">{{lang.selectLanguages.change}} / {{lang.setting.dialog.activeFiat.header}}</h2>
+        <div class="btn-st">
+            <div class="stlang stt fleft">
+                <h3> {{lang.label.language}}</h3>
+                <md-radio-group ng-model="code">
+                    <md-radio-button class="btn btn-{{lag.code}}" ng-repeat="lag in langs" value="{{lag.code}}" aria-checked="{{lag.code}}=={{lang.code}}">{{lag.name}}</md-radio-button>
+                </md-radio-group>
+            </div>
+            <div class="stfiat stt fleft">
+                <h3> {{lang.setting.dialog.activeFiat.title}}</h3>
+                <md-radio-group ng-model="mdfiat">
+                    <md-radio-button class="btn btn-{{fiat.name}}" ng-repeat="fiat in fiats" value="{{fiat.name}}">{{fiat.name}}</md-radio-button>
+                </md-radio-group>
+            </div>
+        </div>
+        <div class="btns clear">
+            <md-button class="cancel clear-gray" ng-click="onCancel()">{{lang.button.cancel}}</md-button>
+            <md-button class="update blue" ng-click="onUpdate()" md-autofocus>{{lang.button.update}}</md-button>
+        </div>
+    </md-input-container>
+</md-dialog>

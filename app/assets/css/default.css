@@ -1,0 +1,33 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/NotoSans/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url('../fonts/NotoSansJP/NotoSansCJKjp-DemiLight.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px;
+}
+
+body,
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-size: 14px;
+    font-family: NotoSans !important;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
+}
+
+.jp {
+    font-family: NotoSansJP;
+}

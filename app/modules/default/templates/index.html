@@ -1,0 +1,28 @@
+<div ng-controller="defaultController" class="page-register language-packages-controler">
+    <div class="page-wrapper {{lang.code}}">
+        <div class="page-header-wrapper clear">
+            <div class="logo">
+                <img ng-src="alta/img/logo_register.png" />
+            </div>
+            <div class="fright window-btns">
+                <button class="window-min" ng-click="onMinimizeWindow();"></button>
+                <button class="window-close" ng-click="onCloseWindow();"></button>
+            </div>
+        </div>
+        <div class="page-content-wrapper clear">
+            <ul class="progress-register">
+                <li class="progress-register-step progress-register-step-1">
+                    <div class="progress-register-step-1-form  step-form">
+                        <div>
+                            <button class="new btn1 next-step" step="2">{{lang.button.createNewWallet}}</button>
+                        </div>
+                        <div>
+                            <button class="restore btn2 next-step" step="0">{{lang.button.restoreWallet}}</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer-wrapper clear"></div>
+    </div>
+</div>

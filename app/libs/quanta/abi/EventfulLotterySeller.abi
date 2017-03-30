@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":true,"name":"buyer","type":"address"},{"indexed":false,"name":"round","type":"uint256"}],"name":"LogWarnContractInactive","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"seller","type":"address"},{"indexed":false,"name":"isContractActive","type":"bool"}],"name":"LogToggleActiveSellerContract","type":"event"}]

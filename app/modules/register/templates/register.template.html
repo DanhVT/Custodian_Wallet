@@ -1,0 +1,17 @@
+<div ng-controller="registerController" ng-init="onInit();" class="page-register LPC">
+    <header class="page-header">
+        <toolbar-directive></toolbar-directive>
+    </header>
+    <section class="page-content">
+        <div class="page-ui-view" ui-view="registerView">
+            <div class="progress-register-step progress-register-step-index">
+                <md-button class="btn-create-new" ng-click="onCreateWallet();"><a tabIndex="-1">{{lang.button.createNewWallet}}</a> </md-button>
+                <md-button class="btn-restore" ng-click="onRestoreWallet();"><a tabIndex="-1">{{lang.button.restoreWallet}}</a></md-button>
+                <div class="btns" ng-show="isBack">
+                    <md-button class="next" ng-click="onBack()">{{lang.button.returnWallet}}</md-button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer"></footer>
+</div>

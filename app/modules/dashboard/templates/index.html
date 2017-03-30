@@ -1,0 +1,21 @@
+<div ng-controller="dashboardController" id="wrapper" class="LPC dashboard-wrapper {{lang.code}}" ng-show="walletReady">
+    <header>
+        <toolbar-directive></toolbar-directive>
+    </header>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                
+            </li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <section ui-view="dashboardView" />
+        <div class="loading-animation-in">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+</div>

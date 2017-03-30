@@ -1,0 +1,37 @@
+{
+    "name": "alta",
+    "description": "Alta",
+    "version": "0.0.0",
+    "homepage": "http://altaapps.io",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "jquery": "2.2.3",
+        "angular": "1.5.x",
+        "angular-ui-router": "^0.3.1",
+        "angular-animate": "1.5.x",
+        "angular-aria": "1.5.x",
+        "angular-messages": "1.5.x",
+        "angular-sanitize": "^1.5.6",
+        "angular-material": "1.0.8",
+        "oclazyload": "1.0.9",
+        "nedb": "^1.6.0",
+        "angular-sortable-view": "0.0.x",
+        "web3": "^0.16.0",
+        "jsSHA": "jssha#^2.1.0",
+        "wallet-address-validator": "^0.1.0",
+        "zxcvbn": "4.3.0",
+        "angular-clipboard": "*",
+        "angular-translate": "*",
+        "async": "2.0.0",
+        "Font-Awesome": "4.x.x",
+        "moment": "2.x.x",
+        "angular-qr-scanner": "^0.1.0",
+        "abi-decoder": "*",
+        "angular-bootstrap": "^2.5.0",
+        "angular-moment": "^1.0.1"
+    },
+    "resolutions": {
+        "angular": "1.5.x"
+    }
+}
